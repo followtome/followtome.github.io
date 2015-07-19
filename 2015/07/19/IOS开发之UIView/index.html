@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>开始第一篇 | Everything will be OK</title>
+  <title>IOS开发之UIView | Everything will be OK</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是一个鄙人进行维护和总结OC语言还有IOS开发中常用代码的博客,欢迎各位驻足.">
+  <meta name="description" content="在IOS开发中,界面的开发是很重要的一部分,那么就势必要对界面的开发有一个比较全面的了解,也要有一个相当的熟练度.本篇博客先主要介绍界面开发的基础.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="开始第一篇">
-<meta property="og:url" content="http://yoursite.com/2015/07/13/开篇/index.html">
+<meta property="og:title" content="IOS开发之UIView">
+<meta property="og:url" content="http://yoursite.com/2015/07/19/IOS开发之UIView/index.html">
 <meta property="og:site_name" content="Everything will be OK">
-<meta property="og:description" content="这是一个鄙人进行维护和总结OC语言还有IOS开发中常用代码的博客,欢迎各位驻足.">
-<meta property="og:updated_time" content="2015-07-12T17:04:47.000Z">
+<meta property="og:description" content="在IOS开发中,界面的开发是很重要的一部分,那么就势必要对界面的开发有一个比较全面的了解,也要有一个相当的熟练度.本篇博客先主要介绍界面开发的基础.">
+<meta property="og:updated_time" content="2015-07-19T04:29:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开始第一篇">
-<meta name="twitter:description" content="这是一个鄙人进行维护和总结OC语言还有IOS开发中常用代码的博客,欢迎各位驻足.">
+<meta name="twitter:title" content="IOS开发之UIView">
+<meta name="twitter:description" content="在IOS开发中,界面的开发是很重要的一部分,那么就势必要对界面的开发有一个比较全面的了解,也要有一个相当的熟练度.本篇博客先主要介绍界面开发的基础.">
   
     <link rel="alternative" href="/atom.xml" title="Everything will be OK" type="application/atom+xml">
   
@@ -181,11 +181,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-开篇" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-IOS开发之UIView" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/07/13/开篇/" class="article-date">
-  	<time datetime="2015-07-12T17:04:47.000Z" itemprop="datePublished">2015-07-13</time>
+      <a href="/2015/07/19/IOS开发之UIView/" class="article-date">
+  	<time datetime="2015-07-19T04:29:07.000Z" itemprop="datePublished">2015-07-19</time>
 </a>
     </div>
   
@@ -198,7 +198,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      开始第一篇
+      IOS开发之UIView
     </h1>
   
 
@@ -214,15 +214,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是一个鄙人进行维护和总结OC语言还有IOS开发中常用代码的博客,欢迎各位驻足.<br><a id="more"></a></p>
-<h3 id="主要内容">主要内容</h3><p>这个博客网站主要包含的内容有以下几个方面:</p>
-<p>1 个人爱好,喜欢对一些原理性的东西进行探究分析,会写在这里.</p>
-<p>2 UI的各个控件的属性和使用会在这里通过每一篇博客进行罗列,方便我自己和他人进行查询</p>
-<h3 id="面向对象">面向对象</h3><p>这个系列的博客主要分两个层次,</p>
-<p>一类属于工具博客,将知识点和常用属性进行总结,<br>一类是是见解博客,将我自己的观点还有对一些系统的实现原理进行总结.</p>
-<h3 id="联系方式">联系方式</h3><p>如果有疑问或是建议,可以直接与我联系</p>
-<p>QQ:693940418</p>
-<p>Email:honourcoder@gmail.com</p>
+        <p>在IOS开发中,界面的开发是很重要的一部分,那么就势必要对界面的开发有一个比较全面的了解,也要有一个相当的熟练度.本篇博客先主要介绍界面开发的基础.<br><a id="more"></a></p>
+<h3 id="UIWindow">UIWindow</h3><p>window即窗口,每个App都需要借助window将内容展示给用户看.App相当于一间屋子,里面有各种的属性和方法,但是我们只能通过window去看内容.也就是说,只有放到window上了才会被用户看到.</p>
+<p>在IOS中,使用UIWindow类来表示和创建窗口,通常一个应用程序之创建一个UIWindow对象,因为window的主要作用是呈现内容给用户,因此我们不会对window做太多操作.</p>
+<h3 id="UIView">UIView</h3><p>UIView(视图):代表屏幕上的一个矩形区域,IOS中用其来表示视图.</p>
+<p>UIView是IOS中所有能看到的内容的视图的父类.</p>
+<p>UIView的使用分四步:</p>
+<p>1 创建视图并指定大小和位置</p>
+<p>2 设置视图的属性</p>
+<p>3 将视图添加上去</p>
+<p>4 内存释放</p>
+<pre>//创建视图并指定大小和位置
+UIView *view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 20, 100, 100)];
+//设置视图的属性
+view1.backgroundColor = [UIColor redColor];
+//将视图添加上去
+[self.window addSubview:view1];
+//将视图添加上去
+[view1 release];</pre>
+
+<h3 id="常用属性和方法">常用属性和方法</h3><p>接下来我们看一下UIView的详细属性.</p>
+<p>1 layer </p>
+<p>代表的是UIView的图层,通过layer获得UIView的图层,可以设置图层的一些属性,例如圆角<pre>UIView.layer.masksToBounds = YES;<br>UIView.layer.cornerRadius = 75;</pre><br>2 center </p>
+<p>代表的是UIView的中心位置,可以通过设置center属性改变UIView的位置.</p>
+<pre>1 创建一个点,点的位置是屏幕的中间
+CGPoint point = CGPointMake(100, 100);
+//2 将这个点指定为view的center的点
+view1.center = point;</pre>
+
+<p>3 frame</p>
+<p>代表的的是UIView的位置和大小</p>
 
       
     </div>
@@ -232,15 +253,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/07/19/IOS开发之UIView/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          IOS开发之UIView
-        
-      </div>
-    </a>
   
+    <a href="/2015/07/13/开篇/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">开始第一篇</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -267,7 +284,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="开篇" data-title="开始第一篇" data-url="http://yoursite.com/2015/07/13/开篇/"></div>
+	<div class="ds-thread" data-thread-key="IOS开发之UIView" data-title="IOS开发之UIView" data-url="http://yoursite.com/2015/07/19/IOS开发之UIView/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

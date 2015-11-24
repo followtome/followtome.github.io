@@ -52,28 +52,19 @@
 
 
 <meta name="description" content="最近在看一个程序,但是运行的时候却报了一个错
-#import &amp;lt; MAMapKit/MAMapKit.h &amp;gt; file not found .
-仔细一看是引用了一个高德地图的SDK.那么简单了,我看一下有没有这个sdk的库文件,没有添加上就是了.
-但是仔细一看发现,这个sdk已经存在了.然后我又猜想是不是searchPath没有设置对.
-好吧,看过之后,发现searchPath也没有设">
+#import &amp;lt; MAMapKit/MAMapKit.h &amp;gt; file not found .仔细一看是引用了一个高德地图的SDK.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="高德地图#import < MAMapKit/MAMapKit.h > file not found的解决办法">
 <meta property="og:url" content="http://yoursite.com/2015/11/24/使用高德地图时遇到的错误/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="BUG">
 <meta property="og:description" content="最近在看一个程序,但是运行的时候却报了一个错
-#import &amp;lt; MAMapKit/MAMapKit.h &amp;gt; file not found .
-仔细一看是引用了一个高德地图的SDK.那么简单了,我看一下有没有这个sdk的库文件,没有添加上就是了.
-但是仔细一看发现,这个sdk已经存在了.然后我又猜想是不是searchPath没有设置对.
-好吧,看过之后,发现searchPath也没有设">
+#import &amp;lt; MAMapKit/MAMapKit.h &amp;gt; file not found .仔细一看是引用了一个高德地图的SDK.">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/005KqbSEjw1eyc1sqp9s4j30eu05fmxh.jpg">
-<meta property="og:updated_time" content="2015-11-24T06:30:44.000Z">
+<meta property="og:updated_time" content="2015-11-24T08:24:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="高德地图#import < MAMapKit/MAMapKit.h > file not found的解决办法">
 <meta name="twitter:description" content="最近在看一个程序,但是运行的时候却报了一个错
-#import &amp;lt; MAMapKit/MAMapKit.h &amp;gt; file not found .
-仔细一看是引用了一个高德地图的SDK.那么简单了,我看一下有没有这个sdk的库文件,没有添加上就是了.
-但是仔细一看发现,这个sdk已经存在了.然后我又猜想是不是searchPath没有设置对.
-好吧,看过之后,发现searchPath也没有设">
+#import &amp;lt; MAMapKit/MAMapKit.h &amp;gt; file not found .仔细一看是引用了一个高德地图的SDK.">
 
 
 
@@ -85,7 +76,7 @@
   };
 </script>
 
-  <title> 高德地图#import < MAMapKit/MAMapKit.h > file not found的解决办法 | Hexo </title>
+  <title> 高德地图#import < MAMapKit/MAMapKit.h > file not found的解决办法 | BUG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -116,7 +107,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Hexo</span>
+      <span class="site-title">BUG</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -252,7 +243,7 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-24T14:32:13+08:00" content="2015-11-24">
+            <time itemprop="dateCreated" datetime="2015-11-24T16:24:12+08:00" content="2015-11-24">
               2015-11-24
             </time>
           </span>
@@ -299,13 +290,7 @@
 
       
         <span itemprop="articleBody"><p>最近在看一个程序,但是运行的时候却报了一个错</p>
-<p>#import &lt; MAMapKit/MAMapKit.h &gt; file not found .</p>
-<p>仔细一看是引用了一个高德地图的SDK.<br>那么简单了,我看一下有没有这个sdk的库文件,没有添加上就是了.</p>
-<p>但是仔细一看发现,这个sdk已经存在了.然后我又猜想是不是searchPath没有设置对.</p>
-<p>好吧,看过之后,发现searchPath也没有设置错.最后无奈了,只能去这个包里面看一下什么问题了.</p>
-<p>查看包内容后发现是如下的情况,很多的快捷方式,而且都已经失效了,可能是在工程拷贝的时候失效了.<br><img src="http://ww3.sinaimg.cn/large/005KqbSEjw1eyc1sqp9s4j30eu05fmxh.jpg"></p>
-<p>那么解决的办法就来了.我直接versions里面的文件夹里,把对应的三个文件拷贝出来,删除这些没用的快捷方式.</p>
-<p>这个时候,再运行,发现OK了.</p>
+<p>#import &lt; MAMapKit/MAMapKit.h &gt; file not found .<br>仔细一看是引用了一个高德地图的SDK.<br><a id="more"></a><br>那么简单了,我看一下有没有这个sdk的库文件,没有添加上就是了.<br>但是仔细一看发现,这个sdk已经存在了.然后我又猜想是不是searchPath没有设置对.<br>好吧,看过之后,发现searchPath也没有设置错.最后无奈了,只能去这个包里面看一下什么问题了.<br>查看包内容后发现是如下的情况,很多的快捷方式,而且都已经失效了,可能是在工程拷贝的时候失效了.<br><img src="http://ww3.sinaimg.cn/large/005KqbSEjw1eyc1sqp9s4j30eu05fmxh.jpg"><br>那么解决的办法就来了.我直接versions里面的文件夹里,把对应的三个文件拷贝出来,删除这些没用的快捷方式.<br>这个时候,再运行,发现OK了.</p>
 </span>
       
     </div>

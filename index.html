@@ -53,12 +53,12 @@
 
 <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="BUG">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="BUG">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="BUG">
 <meta name="twitter:description">
 
 
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title> Hexo </title>
+  <title> BUG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -104,7 +104,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Hexo</span>
+      <span class="site-title">BUG</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -258,7 +258,7 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-24T14:32:13+08:00" content="2015-11-24">
+            <time itemprop="dateCreated" datetime="2015-11-24T16:24:12+08:00" content="2015-11-24">
               2015-11-24
             </time>
           </span>
@@ -305,19 +305,13 @@
 
       
         
-          <span itemprop="articleBody">
-            
-              <p>最近在看一个程序,但是运行的时候却报了一个错</p>
-<p>#import &lt; MAMapKit/MAMapKit.h &gt; file not found .</p>
-<p>仔细一看是引用了一个高德地图的SDK.<br>那么简单了,我看一下有没有这个sdk的库文件,没有添加上就是了.</p>
-<p>但是仔细一看发现,这个sdk已经存在了.然后我又猜想是不是searchPath没有设置对.</p>
-<p>好吧,看过之后,发现searchPath也没有设置错.最后无奈了,只能去这个包里面看一下什么问题了.</p>
-<p>查看包内容后发现是如下的情况,很多的快捷方式,而且都已经失效了,可能是在工程拷贝的时候失效了.<br><img src="http://ww3.sinaimg.cn/large/005KqbSEjw1eyc1sqp9s4j30eu05fmxh.jpg"></p>
-<p>那么解决的办法就来了.我直接versions里面的文件夹里,把对应的三个文件拷贝出来,删除这些没用的快捷方式.</p>
-<p>这个时候,再运行,发现OK了.</p>
-
-            
-          </span>
+          <p>最近在看一个程序,但是运行的时候却报了一个错</p>
+<p>#import &lt; MAMapKit/MAMapKit.h &gt; file not found .<br>仔细一看是引用了一个高德地图的SDK.<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/11/24/使用高德地图时遇到的错误/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
